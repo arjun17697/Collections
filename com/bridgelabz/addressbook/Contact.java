@@ -1,36 +1,34 @@
 package com.bridgelabz.addressbook;
 
 public class Contact {
-	private String fname; // Stores first name of Contact
-    private String lname;  // Stores last name of Contact
-    private String phonenumber; // Stores phone number of contact
-    private String address;  // Stores address
-    private String state; //stores state
-    private String city; // stores city
-    private int zip; // stores zip
-    private String email;// stores email
+	static String fname; // Stores first name of Contact
+	private String lname; // Stores last name of Contact
+	private String phonenumber; // Stores phone number of contact
+	private String address; // Stores address
+	private String state; // stores state
+	private String city; // stores city
+	private int zip; // stores zip
+	private String email;// stores email
 
-    // Creates Contact object based on parameters.
-    public Contact(String f,String l,String p, String c,String a, String s,int z, String e) {
-		fname = f;
-		lname= l;
-		phonenumber = p;
-		address = a;
-		state=s;
-		city=c;
-		zip=z;
-		email=e;
-    }
+	public Contact(String fname, String lname, String phonenumber, String address, String state, String city, int zip,
+			String email) {
 
-    // Changes phone number of contact
-    public void changeNumber(String newnum) {
+		this.fname = fname;
+		this.lname = lname;
+		this.phonenumber = phonenumber;
+		this.address = address;
+		this.state = state;
+		this.city = city;
+		this.zip = zip;
+		this.email = email;
+	}
+	
+	// Changes phone number of contact
+	public void changeNumber(String newnum) {
 		phonenumber = newnum;
-    }
+	}
 
-
-    
-
-    public String getFname() {
+	public static String getFname() {
 		return fname;
 	}
 
@@ -63,12 +61,9 @@ public class Contact {
 	}
 
 	// Prints all information about a contact out.
-    public void printContact() {
+	public void printContact() {
 		System.out.print("First Name: " + fname + " Last Name: " + lname + " Phone#: " + phonenumber);
-		System.out.println(" Address: " + address + "Email:" + email );
-    }
-
-   
-   
+		System.out.println(" Address: " + address + "Email:" + email);
+	}
 
 }
