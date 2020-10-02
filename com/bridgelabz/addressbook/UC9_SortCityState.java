@@ -11,7 +11,7 @@ public class UC9_SortCityState {
 		System.out.println("Enter the name of the state");
 		String getStatename= stdin.next();
 		//HashMap<String, ArrayList<Contact>> friends = new HashMap<String, ArrayList<Contact>>();
-		HashMap<String, ArrayList<Contact>> result = friends.entrySet().stream().filter(map->getStatename.equals(map.getValue()));
+		HashMap<String, ArrayList<Contact>> result = deathnote.entrySet().stream().filter(map->getStatename.equals(map.getValue()));
 		System.out.println("Following persons belong to provided states:" + result);
 	}
 	
@@ -19,7 +19,7 @@ public class UC9_SortCityState {
 		//HashMap<String, ArrayList<Contact>> friends = new HashMap<String, ArrayList<Contact>>();
 		System.out.println("Enter the name of the city");
 		String getCityname= stdin.next();
-		HashMap<String, ArrayList<Contact>> result = friends.entrySet().stream().filter(map->getcityname.equals(map.getValue()));
+		HashMap<String, ArrayList<Contact>> result = deathnote.entrySet().stream().filter(map->getcityname.equals(map.getValue()));
 		System.out.println("Following persons belong to provided city:" + result);
 	}
 
