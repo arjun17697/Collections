@@ -1,7 +1,7 @@
 package com.bridgelabz.addressbook;
 
 public class Contact {
-	private String fname; // Stores first name of Contact
+	private static String fname; // Stores first name of Contact
     private String lname;  // Stores last name of Contact
     private String phonenumber; // Stores phone number of contact
     private String address;  // Stores address
@@ -30,7 +30,7 @@ public class Contact {
 
     
 
-    public String getFname() {
+    public static String getFname() {
 		return fname;
 	}
 
